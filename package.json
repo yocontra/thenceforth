@@ -1,0 +1,29 @@
+{
+  "name": "thenceforth",
+  "description": "Date/Time parsing to human readable messages",
+  "version": "0.1.0",
+  "homepage": "http://github.com/stevelacy/thenceforth",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stevelacy/thenceforth.git"
+  },
+  "author": "Steve Lacy <me@slacy.me> (http://slacy.me)",
+  "main": "./index.js",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest ./tests/index.test.js"
+  },
+  "files": [
+    "./index.js"
+  ],
+  "keywords": [
+    "timeago",
+    "date",
+    "time",
+    "parsing",
+    "since"
+  ]
+}
