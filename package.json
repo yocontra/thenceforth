@@ -17,7 +17,7 @@
     "test": "jest ./tests/index.test.js"
   },
   "files": [
-    "./index.js"
+    "index.js"
   ],
   "keywords": [
     "timeago",
