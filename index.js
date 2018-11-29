@@ -25,18 +25,21 @@ function Thenceforth(i, o) {
   }
   if (diff < HOUR) {
     var minutes = Math.round(diff / MINUTE)
+    if (minutes == 1) return minutes + ' minute ago'
     return minutes + ' minutes ago'
   }
   if (diff < DAY) {
     var hours = Math.round(diff / HOUR)
+    if (hours == 1) return hours + ' hour ago'
     return hours + ' hours ago'
   }
   if (diff < DAY * 2) {
     return 'Yesterday'
   }
   if (diff < WEEK) {
-    var weeks = Math.round(diff / DAY)
-    return weeks + ' days ago'
+    var days = Math.round(diff / DAY)
+    if (days == 1) return days + 'day ago'
+    return days + ' days ago'
   }
   if (diff > MONTH) {
     if (o.pretty !== false) return prettyDate(i)
