@@ -14,6 +14,7 @@ function Thenceforth(i, o) {
   if (!o) o = {}
   if (o.pretty) return prettyDate(i)
   var now = new Date()
+  if (typeof i === 'string') i = new Date(i)
   var diff = now - i
 
   if (diff < MINUTE) {
