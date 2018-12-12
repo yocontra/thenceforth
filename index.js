@@ -41,7 +41,7 @@ function Thenceforth(i, o) {
     if (days == 1) return days + 'day ago'
     return days + ' days ago'
   }
-  if (diff > MONTH) {
+  if (diff > WEEK) {
     if (o.pretty !== false) return prettyDate(i)
     var m = String(1 + i.getMonth())
     if (m.length < 1) m = '0' + m
@@ -54,9 +54,9 @@ function Thenceforth(i, o) {
 }
 
 function prettyDate(i) {
-  var m = months[i.getMonth() + 1]
-  var d = i.getDay() + 1
-  var day = days[d]
+  var m = months[i.getMonth()]
+  var d = i.getDate()
+  var day = days[i.getDay() + 1]
   var y = i.getFullYear()
   return day + ' ' + m + ' ' + d + ', ' + y
 }

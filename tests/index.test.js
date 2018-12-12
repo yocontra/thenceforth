@@ -39,6 +39,6 @@ test('Date() - 2 days should return "Yesterday"', () => {
 test('pretty: false should return "10/10/2010"', () => {
   expect(thenceforth(new Date('2010-10-11T00:00:00+05:30'), { pretty: false })).toBe('10/10/2010')
 })
-test('greater than one month should return "Monday November 1, 2010"', () => {
-  expect(thenceforth(new Date('2010-10-11T00:00:00+05:30'))).toBe('Monday November 1, 2010')
+test('greater than one week should return "Monday October 10, 2010"', () => {
+  expect(thenceforth(new Date('2010-10-11T00:00:00+05:30'))).toBe('Monday October 10, 2010')
 })
