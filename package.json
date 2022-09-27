@@ -1,11 +1,11 @@
 {
   "name": "thenceforth",
   "description": "Date/Time parsing to human readable messages",
-  "version": "0.2.1",
-  "homepage": "http://github.com/stevelacy/thenceforth",
+  "version": "1.0.0",
+  "homepage": "http://github.com/yocontra/thenceforth",
   "repository": {
     "type": "git",
-    "url": "http://github.com/stevelacy/thenceforth.git"
+    "url": "http://github.com/yocontra/thenceforth.git"
   },
   "author": "Steve Lacy <me@slacy.me> (http://slacy.me)",
   "main": "./index.js",
